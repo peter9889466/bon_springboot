@@ -15,14 +15,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class GoodsDetail {
 	
-	// 연관 관계 설정이 가능하다
-	// @OneToOne, @JoinColumn("goods_id")
+	//@OneToOne, @JoinColumn("goods_id")
 	// Goods -> Goods_detail
-
+	
 	@Id
 	private Integer goods_id;
 	
-	@Column(nullable = false)
+	@Column(name = "sub_thumb")
 	private String sub_thumb;
 	
 	@Column(name = "txt")

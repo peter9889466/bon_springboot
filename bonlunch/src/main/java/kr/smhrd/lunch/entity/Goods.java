@@ -16,25 +16,18 @@ import lombok.NoArgsConstructor;
 public class Goods {
 	
 	// 필드
-	@Id // GeneratedValue -> 이미 넣어놓은 데이터를 가지고 오는 작업이라 필
+	@Id
 	private Integer id;
-	
 	@Column(nullable = false)
 	private String name;
-	
 	@Column(nullable = false)
 	private String price;
-	
 	@Column(name = "is_new", nullable = false)
-	private Boolean isNew;
-
+	private boolean isNew;
 	@Column(name = "is_best", nullable = false)
-	private Boolean isBest;
-	
+	private boolean isBest;
 	@Column(nullable = false)
 	private String main_thumb;
 	
 	
-	
-
 }

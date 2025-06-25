@@ -1,14 +1,18 @@
 package kr.smhrd.lunch.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
+@Entity
 @AllArgsConstructor
+@NoArgsConstructor
 public class User {
-	String name;
-	int age;
-	String gender;
+	@Id
+	private String name;
+	private int age;
+	private String gender;
 }
