@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import kr.smhrd.lunch.dto.GoodsDto;
-import kr.smhrd.lunch.entity.Goods;
 import kr.smhrd.lunch.service.GoodsService;
 
 @CrossOrigin(origins = "http://localhost:5173")
